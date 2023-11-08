@@ -25,7 +25,7 @@ func main() {
 	}
 
 	// Create a new VMAC using the AES block cipher
-	mac, err := vmac.New(block, key, nonce, 16) // 64 is the GMAC size in bits
+	mac, err := vmac.New(block, key, nonce, 16) // 16 is the GMAC size in bits
 	if err != nil {
 		log.Fatal(err)
 	}
