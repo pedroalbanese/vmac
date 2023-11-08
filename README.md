@@ -1,5 +1,5 @@
-# vmac
-### VMAC: Message Authentication Code using Universal Hashing
+# VMAC
+#### VMAC: Message Authentication Code using Universal Hashing
 
 ## Example
 ```go
