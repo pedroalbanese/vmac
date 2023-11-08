@@ -26,18 +26,18 @@ func main() {
 	}
 
 	// Create a new VMAC using the AES block cipher
-	gmac, err := vmac.New(block, nonce, message, 64) // 64 is the GMAC size in bits
+	mac, err := vmac.New(block, nonce, message, 64) // 64 is the GMAC size in bits
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Write the message to the VMAC
-	_, _ = gmac.Write(message)
+	_, _ = mac.Write(message)
 
-	// Calculate the GMAC
-	calculatedGMAC := gmac.Sum()
+	// Calculate the VMAC
+	calculatedVMAC := mac.Sum()
 
-	// Display the calculated GMAC
-	fmt.Printf("GMAC: %x\n", calculatedGMAC)
+	// Display the calculated VMAC
+	fmt.Printf("VMAC: %x\n", calculatedVMAC)
 }
 ```
