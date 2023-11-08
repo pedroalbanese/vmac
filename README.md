@@ -7,7 +7,6 @@ package main
 
 import (
 	"crypto/aes"
-	"encoding/hex"
 	"fmt"
 	"log"
 
@@ -16,9 +15,9 @@ import (
 
 func main() {
 	// Example using the AES block cipher
-	key, _ := hex.DecodeString("00000000000000000000000000000000")
-	nonce, _ := hex.DecodeString("00000000000000000000000000000000")
-	message := []byte("Yoda said, do or do not. There is no try.")
+	key := []byte("0000000000000000")
+	nonce := []byte("00000000000000")
+	message := []byte("The quick brown fox jumps over the lazy dog.")
 
 	block, err := aes.NewCipher(key)
 	if err != nil {
@@ -26,7 +25,7 @@ func main() {
 	}
 
 	// Create a new VMAC using the AES block cipher
-	mac, err := vmac.New(block, nonce, message, 64) // 64 is the GMAC size in bits
+	mac, err := vmac.New(block, key, nonce, 16) // 64 is the GMAC size in bits
 	if err != nil {
 		log.Fatal(err)
 	}
