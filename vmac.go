@@ -1,6 +1,6 @@
 // Package vmac is a naive, offline implementation of VMAC
 // http://fastcrypto.org/vmac/draft-krovetz-vmac-01.txt
-package main
+package vmac
 
 import (
 	"math/big"
