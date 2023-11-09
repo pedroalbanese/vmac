@@ -1,6 +1,6 @@
 # VMAC
-#### VMAC: Message Authentication Code using Universal Hashing
-
+### Variable Message Authentication Code
+VMAC stands for "Variable Message Authentication Code." It is a method for generating a message authentication code, a type of cryptographic checksum, that ensures the integrity and authenticity of a message. VMAC is designed to provide security against various cryptographic attacks while offering high performance. It uses a block cipher to process variable-length messages and produce a fixed-size authentication tag. This tag can be used to verify that the message has not been altered and comes from a legitimate sender.
 ## Example
 ```go
 package main
