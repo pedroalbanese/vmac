@@ -44,3 +44,6 @@ func main() {
 	fmt.Printf("VMAC: %x\n", calculatedVMAC)
 }
 ```
+
+Shameless taken from:
+https://github.com/nicksnyder/vmac.go
