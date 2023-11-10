@@ -1,4 +1,8 @@
 # VMAC
+[![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/vmac/blob/master/LICENSE.md) 
+[![GoDoc](https://godoc.org/github.com/pedroalbanese/vmac?status.png)](http://godoc.org/github.com/pedroalbanese/vmac)
+[![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/vmac)](https://goreportcard.com/report/github.com/pedroalbanese/vmac)
+
 ### Variable Message Authentication Code
 VMAC stands for "Variable Message Authentication Code." It is a method for generating a message authentication code, a type of cryptographic checksum, that ensures the integrity and authenticity of a message. VMAC is designed to provide security against various cryptographic attacks while offering high performance. It uses a block cipher to process variable-length messages and produce a fixed-size authentication tag. This tag can be used to verify that the message has not been altered and comes from a legitimate sender.
 ## Example
