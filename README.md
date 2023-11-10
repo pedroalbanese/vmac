@@ -45,5 +45,5 @@ func main() {
 }
 ```
 
-Shameless taken from:
+Shamelessly taken from:  
 https://github.com/nicksnyder/vmac.go
